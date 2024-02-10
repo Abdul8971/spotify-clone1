@@ -1,0 +1,523 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    cursor: pointer;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+    color: white;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.3rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 340px;
+    border-radius: 1rem;
+}
+
+.main-content{
+    /* background-color: #232323; */
+    background-color: #161616;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0 1.5rem 0 1.5rem;
+
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+i{
+    color: #ffffff;
+}
+
+.nav{
+    background-color: #232323;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px; 
+    margin:0 0.9rem 0 0.9rem ;
+    padding: 0.5rem 0.7rem;
+}
+
+.logo{
+    height: 40px;
+    display: flex;
+    margin-left: 0.7rem;
+}
+
+.spotify-logo{
+    height: 24px;
+    margin-top: 13px;
+}
+
+.spotify{
+    margin-top: 14px;
+    color: white;
+    margin-left: 0.2rem;
+}
+
+.nav-option{
+    line-height:2.5rem;
+    opacity: 0.8;
+    padding: 0.1rem 0.75rem;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+
+.nav-option i{
+    font-size: 1rem;
+}
+
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 0.8rem;
+} 
+
+.nav-option a:hover{
+    font-weight: bolder;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    background-color: #232323;
+
+}
+
+.your-library {
+    margin-left: 0.5rem;
+}
+.icons i{
+    margin-left:0.7rem ;
+}
+
+.box{
+    background-color: #232323;
+    height: 10rem;
+    color: white;
+    border-radius: 0.7rem;
+    margin: 0.5rem 0 0.5rem 0;
+    padding: 1rem 1.3rem;
+    /* line-height: 2rem; */
+}
+
+.box-p1-div{
+    height: 2.8rem;
+    align-items: center;
+}
+
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 550;
+}
+
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 4rem;
+    padding: 0.25rem 1rem;
+    font-weight:650 ;
+    height: 2rem;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #232323;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem o 1rem 0 ;
+    z-index: 10;
+    border-radius: 1rem;
+    
+}
+
+.sticky-nav-icons{
+    margin-left: 0.75rem;
+}
+
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-nav-options button {
+    margin-right: 1rem;
+}
+
+@media (max-width:1000px) {
+        .hide{
+            display: none;
+        }
+}
+
+
+/*  cards images starts from here */
+.card{
+    background-color: rgba(35, 35, 35,0.5);
+    width: 170px;
+    height: 250px;
+    border-radius: 0.5rem;
+    padding: 0.9rem;
+    margin-left: 1.5rem;
+    margin-bottom:1rem ;
+}
+.card:hover{
+    background-color: rgba(35, 35, 35,1);
+}
+/* .fa-circle-play{
+    font-size: 3rem;
+   margin-left: 5.5rem;
+   margin-top: -200px;
+} */
+.playbtn-overlap{
+    position: relative;
+    width: 100%;
+    height: 150px;
+
+}
+.playbtn-overlap img{
+    position: absolute;
+}
+.playbtn-overlap i{
+    display: none;
+    position: absolute;
+    right: 0;
+    margin: 5.4rem 0.5rem 0 0;
+    font-size: 3rem;
+}
+
+.card:hover .playbtn-overlap i{
+    display: block;
+    
+}
+
+
+.h2-tag-Recently-Played{
+    margin-top: 0.9rem;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+    opacity: 0.8;
+}
+
+.footer{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 50%;
+    border-top: 2px solid white;
+    opacity: 0.2;
+}
+
+.album{
+    width: 25%;
+}
+
+.album-content{
+    display: flex;
+}
+.album-content img{
+    width: 56px;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.album-content-p{
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.album-content i{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.player{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.palyer-controller img{
+    height: 1.3rem;
+    margin-right: 1.5rem;
+    opacity: 0.7;
+}
+
+.palyer-controller img:hover{
+    opacity: 1;
+}
+.controls{
+    width: 25%;
+}
+
+.playback-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-right: 1.8rem;
+}
+
+.range-bar{
+    width: 20rem;
+    height: 0.2rem;
+    border-radius: 8rem;
+    cursor: pointer;
+    accent-color:#1bd760;
+}
+
+/* .range-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 8rem;
+    height: 0.3rem;
+
+}
+
+.range-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.9rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -4.5px;
+} */
+
+.volume-range{
+    width: 7rem;
+    height: 0.2rem;
+    border-radius: 8rem;
+    cursor: pointer;
+    accent-color:#1bd760;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.controls i,input{
+    margin-right: 1rem;
+}
+.palyer-controller .play-btn{
+    opacity: 1;
+    height: 2rem; 
+    margin-top: 0.9rem;
+}
+
+/*         ......   media query at max-width:1100px  ....... */
+
+@media (max-width:1100px) {
+    .controls .fa-square-youtube,.fa-image,.fa-desktop{
+        display: none;
+    }
+    .nav-option {
+        line-height: 2rem;
+    }
+
+    .palyer-controller img{
+        height: 1rem;
+        margin-right: 1rem;
+        opacity: 0.7;
+    }
+
+    .palyer-controller .play-btn{
+        opacity: 1;
+        height: 1.5rem; 
+        margin-top: 0.9rem;
+    }
+    .range-bar{
+        width: 15rem;
+        height: 0.2rem;
+        border-radius: 8rem;
+        cursor: pointer;
+        accent-color:#1bd760;
+        margin-left: 0.2rem;
+    }
+
+    .sidebar{
+        background-color: black;
+        width: 250px;
+        border-radius: 1rem;
+    }
+
+    .your-library {
+        margin-left: 0.1rem;
+    }
+    .icons i{
+        margin-left:0.1rem ;
+    }
+    .album-content p{
+        text-decoration: none !important;
+    }
+    .sidebar{
+        overflow: scroll;
+    }
+}
+
+/*         ......   media query at max-width:450px  ....... */
+
+@media (max-width:450px) {
+    .sidebar{
+        display: none;
+    }
+
+    .card{
+        background-color: rgba(35, 35, 35,0.5);
+        width: 150px;
+        height: 250px;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-left: 1.2rem;
+        margin-bottom:1rem ;
+    }
+
+    .cards-container{
+        /* display: flex;
+        flex-direction: row;
+        margin-top: 1rem; */
+        overflow-x: scroll;
+    }
+    .album-content p {
+        display: none;
+    }
+    .album-content i {
+        display: none;
+    }
+    .album-content img{
+        margin-top: 0.5rem;
+    }
+
+    .controls{
+        display: none;
+    }
+    
+    .palyer-controller img{
+        height: 1.3rem;
+        opacity: 0.7;
+    }
+    .playback-bar{
+        margin-bottom: 1rem;
+        margin-right: 1.2rem;
+    }
+    
+    .range-bar{
+        width: 12rem;
+    }
+    .player{
+        margin-left: 1rem;
+    }
+
+    .sticky-nav-icons img{
+        display: none;
+    }
+
+}
+
+/*         ......   media query at max-width:375px  ....... */
+
+@media  (max-width:380px) {
+
+    .card {
+        background-color: rgba(35, 35, 35,0.5);
+        width: 100px ;
+        height: 250px;
+        border-radius: 0.5rem;
+        padding: 0.5rem;
+        margin-left: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .cards-container {
+        width: 50%;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 1rem;
+
+    }
+    .card{
+            flex: 0 0 auto;
+            width: auto;
+            max-width: 100%;
+            margin-right: 10px
+    }
+    .player{
+        width: 20rem;
+        margin-left: 0.1rem;
+    }
+    .playback-bar{
+        width: 1rem;
+        margin-top: 0.5rem;
+        margin-right: 1.5rem;
+    }
+
+}
